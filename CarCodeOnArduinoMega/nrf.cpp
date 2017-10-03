@@ -8,6 +8,7 @@ const uint64_t UnoPipe = 0xE5E5E5E5E5LL;
 RF24 radio(ce,csn);
 
 void nrf_init(){
+  pinMode(53,OUTPUT);
   radio.begin();
   radio.enableAckPayload();
   radio.setDataRate(RF24_250KBPS);

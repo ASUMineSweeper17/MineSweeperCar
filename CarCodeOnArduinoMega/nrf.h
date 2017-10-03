@@ -5,8 +5,8 @@
 #include <nRF24L01.h>
 #include <RF24.h>
 
-#define ce 7
-#define csn 8
+#define ce 8
+#define csn 53
 
 void nrf_init();
 void trans (String n);

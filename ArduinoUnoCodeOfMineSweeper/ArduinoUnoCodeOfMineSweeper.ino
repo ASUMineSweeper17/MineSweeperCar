@@ -39,8 +39,6 @@ void loop (){
   go=Serial.read();
   trans(go);
   }
-  come=rec();
-  Serial.println(come);
 }
 
 
@@ -49,10 +47,12 @@ void trans (char n){
     radio.stopListening();
     listenIndicator=false;
   }
+  radio.write(&n,sizeof(n));
+  /*
   bool done=false;
   while (!done){
     done = radio.write(&n,sizeof(n));
-  }
+  }*/
 }
 
 String rec (){
