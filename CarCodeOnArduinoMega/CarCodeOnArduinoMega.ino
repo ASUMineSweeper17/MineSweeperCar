@@ -28,30 +28,24 @@ void setup() {
 }
 
 void loop() {
-  
     come=rec();
-    
     switch (come){          
        case '1':{
          forward(Speed);
          break;
        }
-       
        case '2':{
          turnRight(Speed);
          break;
        }
-       
        case '4':{
          turnLeft(Speed);
          break;
        }
-       
        case '5':{
          backward(Speed);
          break;
        }
-       
        case '3':{
          stopp();
          break;   
